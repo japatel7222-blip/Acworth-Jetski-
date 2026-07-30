@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07110e" />
+  <title>Acworth Jet Ski Rentals — Lake Allatoona</title>
+  <meta name="description" content="Premium jet ski rentals on Lake Allatoona in Acworth, Georgia." />
+  <link rel="preload" href="assets/hero.mp4" as="video" type="video/mp4" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark">AWR</div>
+    <div class="loader__track"><span></span></div>
+    <div class="loader__meta"><span>LAKE ALLATOONA</span><span>34.0659° N</span></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Acworth Jet Ski Rentals home">
+      <span class="brand__dot"></span>
+      <span>ACWORTH<br>JET SKI RENTALS</span>
+    </a>
+    <div class="nav__center">LAKE ALLATOONA · GEORGIA</div>
+    <div class="nav__actions">
+      <button class="sound" type="button" aria-label="Toggle video sound"><span></span> SOUND OFF</button>
+      <a class="nav__book" href="#book">BOOK A RIDE</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Jet ski rider at sunset">
+      <video class="hero__video hero__video--wash" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <video class="hero__video hero__video--main" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__shade"></div>
+      <div class="hero__grain"></div>
+
+      <div class="hero__eyebrow"><span>01</span><span>THE LAKE IS YOURS</span></div>
+      <div class="hero__title" aria-label="Ride Allatoona">
+        <div class="hero__line"><span>RIDE</span><span class="hero__outline">RIDE</span></div>
+        <div class="hero__line hero__line--right"><span>ALLATOONA</span></div>
+      </div>
+      <div class="hero__bottom">
+        <p>High-energy rides. Sunset water. No ordinary rental day.</p>
+        <a class="round-link" href="#experience"><span>EXPLORE</span><i>↘</i></a>
+      </div>
+      <div class="hero__scroll">SCROLL TO ENTER <i></i></div>
+    </section>
+
+    <section class="statement" id="experience">
+      <div class="section-index">02 / EXPERIENCE</div>
+      <div class="statement__copy reveal">
+        <span class="ghost">NOT A TOUR.</span>
+        <h2>YOUR FASTEST<br>DAY ON THE LAKE.</h2>
+      </div>
+      <div class="statement__aside reveal">
+        <p>Built for the people who would rather make a wake than watch one.</p>
+        <p>Launch from Acworth and turn Lake Allatoona into your own open-water playground.</p>
+      </div>
+    </section>
+
+    <section class="film">
+      <div class="film__sticky">
+        <video class="film__bg" muted loop playsinline preload="metadata" poster="assets/ride-poster.jpg">
+          <source src="assets/ride.mp4" type="video/mp4" />
+        </video>
+        <div class="film__veil"></div>
+        <div class="film__copy">
+          <span>03 / THE RIDE</span>
+          <h2>OPEN WATER.<br>FULL THROTTLE.</h2>
+          <p>Responsive machines, real lake footage, and a ride built around the moment—not a generic rental counter.</p>
+        </div>
+        <div class="film__meter"><span></span></div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="section-index">04 / BEFORE YOU RIDE</div>
+      <div class="details__grid">
+        <article class="detail reveal"><span>01</span><h3>Choose your window</h3><p>Morning water, afternoon energy, or a sunset session.</p></article>
+        <article class="detail reveal"><span>02</span><h3>Meet at the lake</h3><p>Receive the exact launch point and arrival details with confirmation.</p></article>
+        <article class="detail reveal"><span>03</span><h3>Get oriented</h3><p>A quick safety walkthrough gets you comfortable before launch.</p></article>
+        <article class="detail reveal"><span>04</span><h3>Own the water</h3><p>Ride Lake Allatoona and come back with a story worth replaying.</p></article>
+      </div>
+    </section>
+
+    <section class="split-film">
+      <div class="split-film__visual reveal">
+        <video muted loop playsinline preload="metadata" poster="assets/sunset-poster.jpg">
+          <source src="assets/sunset.mp4" type="video/mp4" />
+        </video>
+        <button type="button" class="play-control">PLAY FILM</button>
+      </div>
+      <div class="split-film__copy reveal">
+        <span>05 / ALLATOONA AFTER DARK</span>
+        <h2>CHASE<br>THE LAST<br>LIGHT.</h2>
+        <p>Golden water, cooler air, and the kind of sunset that makes the entire lake look cinematic.</p>
+      </div>
+    </section>
+
+    <section class="booking" id="book">
+      <div class="booking__marquee" aria-hidden="true"><span>READY TO RIDE · READY TO RIDE · READY TO RIDE · </span></div>
+      <div class="booking__inner">
+        <div class="booking__copy">
+          <span>06 / RESERVE</span>
+          <h2>MAKE THE<br>LAKE YOURS.</h2>
+          <p>Send a request and Acworth Jet Ski Rentals will confirm availability, pricing, and your launch details.</p>
+        </div>
+        <form class="booking__form" id="bookingForm">
+          <label><span>Your name</span><input name="name" autocomplete="name" required placeholder="Jaylen Patel" /></label>
+          <label><span>Phone number</span><input name="phone" autocomplete="tel" required placeholder="(000) 000-0000" /></label>
+          <div class="form-row">
+            <label><span>Preferred date</span><input name="date" type="date" required /></label>
+            <label><span>Riders</span><select name="riders"><option>1 rider</option><option>2 riders</option><option>3–4 riders</option><option>5+ riders</option></select></label>
+          </div>
+          <label><span>Anything we should know?</span><textarea name="notes" rows="3" placeholder="Preferred time, experience level, questions..."></textarea></label>
+          <button class="submit" type="submit"><span>REQUEST YOUR RIDE</span><i>↗</i></button>
+          <p class="form-note">Demo form — connect a phone number, email, or booking platform before launch.</p>
+        </form>
+      </div>
+      <footer>
+        <div>ACWORTH JET SKI RENTALS</div>
+        <a href="https://www.tiktok.com/@jacdabarberr" target="_blank" rel="noreferrer">TIKTOK @JACDABARBERR ↗</a>
+        <div>LAKE ALLATOONA · GA</div>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast" role="status">REQUEST READY — CONNECT CONTACT DETAILS TO SEND</div>
+  <script src="script.js"></script>
+</body>
+</html>
